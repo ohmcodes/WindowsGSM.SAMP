@@ -26,7 +26,7 @@ namespace WindowsGSM.Plugins
             name = "WindowsGSM.SAMP", // WindowsGSM.XXXX
             author = "ohmcodes",
             description = "WindowsGSM plugin for supporting SAMP Dedicated Server",
-            version = "1.0.0",
+            version = "1.0.1",
             url = "https://github.com/ohmcodes/WindowsGSM.SAMP", // Github repository link (Best practice)
             color = "#FFBF00" // Color Hex
         };
