@@ -26,7 +26,7 @@ namespace WindowsGSM.Plugins
             name = "WindowsGSM.SAMP", // WindowsGSM.XXXX
             author = "ohmcodes",
             description = "WindowsGSM plugin for supporting SAMP Dedicated Server",
-            version = "1.0.0",
+            version = "1.0.1",
             url = "https://github.com/ohmcodes/WindowsGSM.SAMP", // Github repository link (Best practice)
             color = "#FFBF00" // Color Hex
         };
@@ -303,7 +303,7 @@ namespace WindowsGSM.Plugins
                 {
                     string userAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3";
                     webClient.Headers.Add(HttpRequestHeader.UserAgent, userAgent);
-                    string html = await webClient.DownloadStringTaskAsync("https://sa-mp.mp/downloads/");
+                    string html = await webClient.DownloadStringTaskAsync("https://sa-mp.mp/create-server/");
                     string stringPattern = @"<a\s+[^>]*href=""(?<url>[^""]*svr[^""]*win32[^""]*)""[^>]*>";
 
                     MatchCollection matches = Regex.Matches(html, stringPattern);
